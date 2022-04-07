@@ -8,12 +8,19 @@
 
 }
 
+#navbar{
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin: 0;
+}
 #navbar::before{
     content: "";
     background-color: rgb(34, 157, 161);
     position: absolute;
-    height: 70%;
-    width: 100%;
+    height: 100%;
+    width: 99vw;
     z-index: -1;
     border-radius: 15px;
     display: flex;
@@ -22,16 +29,11 @@
     width: 100%;
 }
 #logo img{
-    height: 59px;
-    margin: 34px 45px;
+    height: 100px;
+    width: 100px;
+    margin: 10px 10px 10px 13px;
 }
-#navbar{
-    position: relative;
-    display: flex;
-    align-items: center;
-    width: 100%;
-    margin: 0;
-}
+
 #navbar ul{
     display: flex;
     /* font-family: 'Baloo Bhai 2', cursive; */
