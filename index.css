@@ -17,6 +17,9 @@ body{
 }
 .item{
     font-weight: bold;
+    text-decoration: none;
+    color: blue;
+    margin-top: 13px;
 }
 a{
     text-decoration: none;
@@ -35,7 +38,7 @@ h2{
 #navbar{
     background-color: rgb(34, 157, 161);
     border-radius: 20px;
-    height: 50px;
+    height: 80px;
 }
 
 #navbar div{
@@ -104,7 +107,6 @@ h2{
 /* #navbar ul{
     display: flex;
     /* font-family: 'Baloo Bhai 2', cursive; */
-}
 /* #navbar ul li{
     list-style: none;
     font-size: 1.4rem;
@@ -232,6 +234,5 @@ h2{
 
 }
 /* .item {
-    text-decoration: none;
-    color: blue;
+
 } */
