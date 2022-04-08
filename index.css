@@ -13,7 +13,7 @@ body{
     display: block;
     justify-content: center;
     align-items: center;
-    background-color: rgb(148, 179, 137);
+    background-color: rgb(152, 152, 152);
 }
 .item{
     font-weight: bold;
