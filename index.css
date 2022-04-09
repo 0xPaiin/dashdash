@@ -24,7 +24,7 @@ body{
 a{
     text-decoration: none;
     padding: 15px 30px;
-    color: rgb(35, 90, 191);
+    color: #0a0234;
     font-size: 20px;
     position: relative;
     /* border: 2px solid rgb(127, 237, 100); */
@@ -33,6 +33,7 @@ h2{
     font-weight: bold;
 }
 .vacencies{
+    color: #36a8a3;
     letter-spacing: 1px;
 }
 #navbar{
@@ -73,6 +74,20 @@ h2{
 #navbar ul li a:hover{
     color: black;
     background-color: white;
+    border-radius: 20px;
+}
+
+.floating{
+    display: grid;
+    background-color: rgb(210, 210, 210);
+    width: 79vw;
+    align-items: center;
+    text-align: center;
+    margin-top: 1vw;
+    margin-left: 10%;
+    margin-right: 10%;
+    padding: 20px 20px 20px 20px;
+    border: 8px solid rgb(183, 255, 0);
     border-radius: 20px;
 }
 
