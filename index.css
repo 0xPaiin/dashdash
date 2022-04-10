@@ -3,13 +3,8 @@
     padding: 0;
     box-sizing: border-box;
 }
-:root{
-    --navbar-height: 29px;
-
-}
 body{
     width: 100%;
-    height: 100vh;
     display: block;
     justify-content: center;
     align-items: center;
@@ -25,7 +20,6 @@ a{
     text-decoration: none;
     padding: 15px 30px;
     color: #0a0234;
-    font-size: 20px;
     position: relative;
     /* border: 2px solid rgb(127, 237, 100); */
 }
@@ -37,14 +31,11 @@ h2{
     letter-spacing: 1px;
 }
 #navbar{
+    height: auto;
     background-color: rgb(34, 157, 161);
-    border-radius: 20px;
-    height: 80px;
+    border-radius: 5px;
 }
 
-#navbar div{
-    display: flex;
-}
 #navbar ul{
     width: 100%;
     display: flex;
@@ -56,25 +47,29 @@ h2{
 
 #navbar ul li a{
     color: rgb(243, 228, 195);
-    font-size: 30px;
-    padding: 8px 15px;
+    font-size: 120%;
+    padding: 0% 0% 0% 0%;
     position: relative;
-    margin: 0px 20px;
+    /* margin: 20% 20% 20% 0%; */
+}
+.item{
+    height: auto;
+    margin: 1% 1% 1% 1%;
+    padding: 1% 1% 1% 1%;
 }
 #navbar::before{
     content: "";
     position: absolute;
-    height: 100%;
-    width: 99vw;
     z-index: -1;
-    border-radius: 15px;
+    border-radius: 20%;
     display: flex;
-    transform: rotate(360deg);
 }
 #navbar ul li a:hover{
+    display: inline-block;
     color: black;
     background-color: white;
-    border-radius: 20px;
+    border-radius: 40%;
+    width: 110%;
 }
 
 .floating{
@@ -87,7 +82,7 @@ h2{
     margin-left: 10%;
     margin-right: 10%;
     padding: 20px 20px 20px 20px;
-    border: 8px solid rgb(183, 255, 0);
+    border: 8px solid rgb(240, 151, 92);
     border-radius: 20px;
 }
 
@@ -96,46 +91,6 @@ h2{
     margin-left: 10vw;
     margin-right: 10vw;
 }
-
-
-/* .wave{
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 100%;
-    left: 100%;
-    background-color: cornflowerblue;
-} */
-
-/* #navbar{
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    margin: 0;
-} */
-
-/* .item{
-    width: 100%;
-} */
-
-
-/* #navbar ul{
-    display: flex;
-    /* font-family: 'Baloo Bhai 2', cursive; */
-/* #navbar ul li{
-    list-style: none;
-    font-size: 1.4rem;
-    display: inline-block;
-} */
-/* #navbar ul li a{
-    color:rgb(241, 240, 255);
-    display: block;
-    padding: 3px 22px;
-    border-radius: 20px;
-    text-decoration: none;
-    cursor: pointer;
-} */
-
 
 #services {
     display: flex;
@@ -208,6 +163,11 @@ h2{
 .h-primary{
     font-size: 2.8rem;
     padding: 12px;
+
+}
+#home p{
+    font-size: 1.3rem;
+    letter-spacing: 2px;
 
 }
 /* .btn{
