@@ -181,7 +181,6 @@ h2{
     text-align: left;
     padding: 2% 5% 2% 2%;
     margin: 1% 0% 1% 15%;
-    transition: all 0.3s ease;
 }
 .more{
     text-align: center;
@@ -189,4 +188,36 @@ h2{
     background-color: rgb(237, 203, 11);
     margin: 5%;
     border-radius: 50%;
+}
+.foot{
+    color: white;
+    display: flex;
+    height: 4vh;
+    background-color: #3c0715;
+    text-align: center;
+    justify-content: center;
+}
+.foot p{
+    justify-content: center;
+    text-align: center;
+    margin-top: 12px;
+}
+
+@media screen and (max-width:1150px){
+    body{
+        background-color: rgb(204, 26, 53);
+    }
+    #navbar ul{
+        display: -webkit-box;
+        font-size: 0.8rem;
+        flex-direction: column;
+    }
+    .jobs{
+        display: flex;
+        border: none;
+        border-radius: 0%;
+        flex-direction: column;
+        /* flex-basis: 100%; */
+    }
+
 }
