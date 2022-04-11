@@ -109,27 +109,32 @@ h2{
     width: auto;    
 }
 
-.jobs{
+.jobs {
     display: inline-grid;
-    width: 32%;
+    width: 100%;
     align-items: center;
-    padding: auto;
+    /* padding: auto; */
     border-radius: 15px;
     border: 2px solid rgb(5, 241, 135);
-    color: rgb(231, 235, 210);
+    color: rgb(52, 52, 49);
     background-color: rgb(224, 224, 224);
-    margin: auto;
-    margin-top: 30px;
+    margin:2vh 1vw 2vh 1vw;
+    padding:2vh 2vw 2vh 2vw;
+    /* margin-top: 30px; */
+}
+.job li{
+    margin: 3px 0px 11px 0px;
+    padding:10px 0px 4px 0px;
 }
 
 .jobs h2 {
     text-align: center;
     margin-top: 15px;
     margin-bottom: 10px;
-    margin-left: 6vw;
+    /* margin-left: 6vw; */
     background-color: #df3260;
     border-radius: 25px;
-    width: 50%;
+    width: 0100%;
 }
 
 
@@ -228,6 +233,12 @@ h2{
         border-radius: 20px;
         height: fit-content;
         font-size: larger;
+    }
+
+    .jobs ol{
+        display: block;
+        width: 600px;
+
     }
 
     .jobs .job{
