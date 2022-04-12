@@ -171,7 +171,14 @@ h2{
     padding: 2% 5% 2% 2%;
     margin: 1% 0% 1% 15%;
 }
-
+.more{
+    justify-content: center;
+    text-align: center;
+    font-size: large;
+    background-color: rgb(237, 203, 11);
+    margin: 5%;
+    border-radius: 20%;
+}
 .foot{
     color: white;
     display: flex;
