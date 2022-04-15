@@ -185,12 +185,15 @@ h2{
     padding: 2% 5% 2% 2%;
     margin: 1% 0% 1% 15%;
 }
-.more{
-    justify-content: center;
-    text-align: center;
+.btn1{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    width: 30%;
     font-size: large;
     background-color: rgb(237, 203, 11);
     margin: 5%;
+    height: 50%;
     border-radius: 20%;
 }
 footer{
@@ -209,18 +212,6 @@ footer{
     justify-content: center;
     text-align: center;
     margin-top: 12px;
-}
-.button1{
-    text-align: center;
-}
-.btn{
-    border:1px solid blue;
-    background: none;
-    padding: 10px 20px;
-    font-size: 20px;
-    cursor: pointer;
-    margin: 10px;
-    transition: 0.8s;
 }
 
 @media screen and (max-width:1024px){
