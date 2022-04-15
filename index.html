@@ -29,6 +29,23 @@
             document.write('</ul>');
         }
     </script>
+    <script>
+        const navSlide = () => {
+            const burger = document.querySelector('.burger');
+            const nav = document.querySelector('.nav-links');
+            const navLinks = document.querySelectorAll('.nav-links li');
+
+            burger.addEventListener('click', () => {
+                nav.classList.toggle('nav-active');
+            });
+            //Animate Links
+            navLinks.forEach(link,index) => {
+                link.style.animation = 'navLinkFade 0.5s ease forwards ${index / 7}'
+                console.log(index/7);
+            }
+        }
+        navSlide();
+    </script>
     
     <style>
 
@@ -38,11 +55,19 @@
 </head>
 <body>
     <nav class="navbar">
-        <ul>
+        <div class="logo">
+            <h4>dashdash.in</h4>
+        </div>
+        <ul class="nav-links">
             <li><a href="https://www.dashdash.in/">Home</a></li>
             <li><a href="https://www.dashdash.in/">About Us</a></li>
             <li><a href="https://www.dashdash.in/">Contact Us</a></li>
         </ul>
+        <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
     </nav>
     <section class="description">
         <h1>Welcome To DashDash Official</h1>
@@ -96,13 +121,13 @@
                     <hr>
                     <li><a href="https://onlinebpsc.bihar.gov.in/main/home">Bihar BPSC Primary School Head Teacher Online Form 2022</a></li>
                     <hr>
-                    <li class="more"><a href="/jobs">View More</a></li>
+                    <li class="more"><a href="#">View More</a></li>
                 </ol>
             </div>
             <div class="jobs">
                 <h2>Admit Card</h2>
                 <ol class="job">
-                    <li><a href="#">RSMSSB House Keeper Online Form 2022</a></li>
+                    <li><a href="http://uppbpb.gov.in/ASI_M_2020/List_of_SI(Confidential)_ASI(Ministerial).pdf">UP Police SI Confidential, ASI Clerk PET Exam Date 2022</a></li>
                     <hr>
                     <li><a href="#">ECIL Junior Technician Online Form 2022</a></li>
                     <hr>
@@ -122,7 +147,7 @@
                     <hr>
                     <li><a href="#">Bihar BPSC Primary School Head Teacher Online Form 2022</a></li>
                     <hr>
-                    <li class="more"><a href="/admitcard">View More</a></li>
+                    <li class="more"><a href="#">View More</a></li>
                 </ol>
             </div>
             <div class="jobs">
@@ -148,13 +173,15 @@
                     <hr>
                     <li><a href="#">Bihar BPSC Primary School Head Teacher Online Form 2022</a></li>
                     <hr>
-                    <li class="more"><a href="/result">View More</a></li>
+                    <li class="more"><a href="#">View More</a></li>
                 </ol>
             </div>
         </section>
     
     </section>
-    <hr>
+    <div class="button1">
+        <button class="btn1"></button>
+    </div>
     <footer class="foot">
         <p>Copyright &copy; dashdash.in </p>
     </footer>
