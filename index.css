@@ -225,6 +225,9 @@ h2{
 }
 
 @media screen and (max-width:1024px){
+    body{
+        overflow-x: hidden;
+    }
     .nav-links{
         display: flex;
         justify-content: space-around;
