@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!DOCTYPE .html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -35,14 +35,10 @@
             const nav = document.querySelector('.nav-links');
             const navLinks = document.querySelectorAll('.nav-links li');
 
-            burger.addEventListener('click', () => {
+            burger.addEventListener('click',('.nav-links')=>{
                 nav.classList.toggle('nav-active');
             });
-            //Animate Links
-            navLinks.forEach(link,index) => {
-                link.style.animation = 'navLinkFade 0.5s ease forwards ${index / 7}'
-                console.log(index/7);
-            }
+
         }
         navSlide();
     </script>
@@ -69,6 +65,7 @@
             <div class="line3"></div>
         </div>
     </nav>
+    <script src="app.js"></script>
     <section class="description">
         <h1>Welcome To DashDash Official</h1>
         <p> 
@@ -82,15 +79,16 @@
     <section>
         <h1 class="recentupdates">Recent Updates</h1>
         <div class="floating">
-            <marquee behavior="alternate" onmouseover="if(!window.__cfRLUnblockHandlers ) return false; this stop();"
-            onmouseout="if (!window._cfRLUnblockHandlers)return false; this.start();">
+            <marquee behavior="alternate" onmouseover="this.stop();"
+            onmouseout="if (this.start();">
                 <a href="https://www.youtube.com/channel/UC7QLSWCa1pfG2iPCr_GxqqQ"target="_blank">DashDash Official Youtube Channel
                 </a>
                 <a href="http://www.results.biharboardonline.com/" target="_blank">BiharBoard Matric result</a>
                 <a href="https://voterportal.eci.gov.in/" target="_blank">Voter Card</a>
             </marquee>
 
-            <marquee behavior="alternate" OnMouseOver="if (!window_cfRLUnblockHandflers ) return false;" onmouseout="if (!window_cfRLUnblockHandflers) return false; this.start();">
+            <marquee behavior="alternate" onmouseover="if(!window._cfRLUnblockHandflers) return false; this.stop();"
+            onmouseout="if (!window_cfRLUnblockHandflers) return false; this.start();">
                 <a href="http://164.100.130.240/" target="_blank">RationCard Online</a>
                 <a href="https://serviceonline.bihar.gov.in/" target="_blank">Jati/Niwas/Income Online
                 </a>
