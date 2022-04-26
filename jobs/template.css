@@ -143,7 +143,20 @@ h2{
     padding: 50px 50px 50px 50px;
     font-size: larger;
 }
-table, tr, td{
+table{
+    font-size: large;
+    border-collapse: collapse;
+    border: 3px solid brown;
+    padding: 2% 2% 2% 2%;
+}
+tr{
+    font-size: large;
+    border-collapse: collapse;
+    border: 3px solid brown;
+    padding: 2% 2% 2% 2%;
+}
+td{
+    font-size: large;
     border-collapse: collapse;
     border: 3px solid brown;
     padding: 2% 2% 2% 2%;
@@ -219,20 +232,16 @@ table, tr, td{
         list-style: none;
     }
     .btn1{
-        /* display: flex; */
         justify-content: space-around;
         text-align: center;
         list-style: none;
         width: 50%;
         font-size: small;
         background-color: #df3260;
-        /* color: #df3260; */
-        /* margin: 5%; */
         height: auto;
         border-radius: 20%;
     }
 
-}
 
 @media screen and (max-width:768px){
     body{
