@@ -4,6 +4,7 @@
     box-sizing: border-box;
 
 }
+
 body{
     width: 100%;
     align-items: center;
@@ -38,6 +39,7 @@ h2{
     align-items: center;
     min-height: 8vh;
     border-radius: 18px;
+    overflow: hidden;
 }
 
 .nav-links{
@@ -99,7 +101,6 @@ h2{
 .floating a{
     font-weight: bolder;
     color:blueviolet;
-
 }
 
 .jobcontainer {
@@ -174,8 +175,6 @@ h2{
     background-color: #bb355b;
     border-radius: 10px;
     padding: 9px 0px 9px 0px;
-
-
 }
 .job{
     text-align: left;
@@ -226,7 +225,7 @@ h2{
 
 @media screen and (max-width:1024px){
     body{
-        overflow-x: hidden;
+        overflow: hidden;
     }
     .nav-links{
         display: flex;
@@ -256,21 +255,23 @@ h2{
     }
 
     .nav-links{
+        border-radius: 65px;
+        font-size: small;
         position: absolute;
         right: 0px;
-        height: 92vh;
+        height: 20vh;
         top: 8vh;
         background-color: rgb(34, 157, 161);
         display: flex;
         flex-direction: column;
         align-items: center;
-        width: 30%;
+        width: 40%;
         transform: translate(100%);
         transition: transform 0.5s ease-in;
     }
-    .nav-links li{
+    /* .nav-links li{
         opacity: 0;
-    }
+    } */
     .burger{
         display:block;
         cursor: pointer;
