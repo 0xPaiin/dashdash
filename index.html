@@ -1,316 +1,160 @@
-*{
-    margin:0;
-    padding: 0;
-    box-sizing: border-box;
+<!DOCTYPE .html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DashDash.in : Sarkari Results, Latest Online Form | result 2022</title>
+    <meta name="description" content="Sarkari Result, Sarkari Results : Dashdash.in provides latest Sarkari result, Jobs, Online Form, Sarkari Naukri Result in Sarkari Result 2022 various sectors such as Railway, Bank, SSC, Navy, Police, UPSC, UPPSC, UPSSSC, UPTET, UP Scholarship and other sarkari result alerts on one place">
+    <meta name="keywords" content="Sarkari Result, Sarkari Results, Latest Sarkari Result, Sarkariresult, Sarkari, SarkariResults, Sarkari Naukri, sarkari results 2022, sarkari result 2021, Sarkari Exam, Dashdash.in ">
+    <meta http-equiv="content-language" content="en" />
+    <meta name="distribution" content="global" />
+    <script>
+        const navSlide = () => {
+            const burger = document.querySelector('.burger');
+            const nav = document.querySelector('.nav-links');
+            const navLinks = document.querySelectorAll('.nav-links li');
 
-}
+            burger.addEventListener('click',('.nav-links')=>{
+                nav.classList.toggle('nav-active');
+            });
 
-body{
-    width: 100%;
-    align-items: center;
-    justify-content:"";
-    display: block;
-    background-color: rgb(34, 157, 185);
-}
+        }
+        navSlide();
+    </script>
+    
+    <link rel="stylesheet" href="index.css">
 
-a{
-    text-decoration: none;
-    padding: 15px 30px;
-    color: #0a0234;
-    position: relative;
-}
-h2{
-    font-weight: bold;
-}
-.vacencies{
-    color: #36a8a3;
-    letter-spacing: 1px;
-}
-.logo{
-    color: rgb(241, 234, 234);
-    text-transform: uppercase;
-    letter-spacing: 5px;
-    font-size: 22px;
-}
-.navbar{
-    display: flex;
-    background-color: rgb(34, 157, 161);
-    justify-content: space-around;
-    align-items: center;
-    min-height: 8vh;
-    border-radius: 18px;
-    overflow: hidden;
-}
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <h4>dashdash.in</h4>
+        </div>
+        <ul class="nav-links">
+            <li><a href="https://www.dashdash.in/">Home</a></li>
+            <li><a href="https://www.dashdash.in/">About Us</a></li>
+            <li><a href="https://www.dashdash.in/">Contact Us</a></li>
+        </ul>
+        <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+    </nav>
+    <script src="app.js"></script>
+    <section class="description">
+        <h1>Welcome To DashDash Official</h1>
+        <p> 
+            Dashdash.in is a platform where thousands of Sarkari Naukri online forms are available, as soon as a new Sarkari Naukri form comes out in Uttar Pradesh, Bihar, Madhya Pradesh, Delhi, Uttarakhand and other states. The information is available on dashdash.in . Sarkari Naukri 10+2 Form, Sarkari Naukri Graduate Passed Jobs, Sarkari Naukri Post Graduate Jobs, Sarkari Naukri Medical Jobs, Sarkari Naukri in SSC, UPSC in Sarkari Naukri. And young people can see the information about Sarkari Naukri form organized by many other organizations with a single click on dashdash.in
+        </p>
+        <!-- <button class="btn">Order Now</button> --> 
+    
+    </section>
+    <br>
 
-.nav-links{
-    display: flex;
-    justify-content: space-around;
-    width: 40%;
-    list-style: none;
-}
+    <section>
+        <h1 class="recentupdates">Recent Updates</h1>
+        <div class="floating">
+            <marquee behavior="alternate" onmouseover="if (window.__cfRLUnblockHandflers) return false; this.stop();"onmouseout="if(window.__cfRLUnblockHandflers) return false; this.start();">
+                <a href="https://www.youtube.com/channel/UC7QLSWCa1pfG2iPCr_GxqqQ"target="_blank">DashDash Official Youtube Channel
+                </a>
+                <a href="http://www.results.biharboardonline.com/" target="_blank">BiharBoard Matric result</a>
+                <a href="https://voterportal.eci.gov.in/" target="_blank">Voter Card</a>
+            </marquee>
 
-.nav-links li a{
-    color: rgb(243, 228, 195);
-    font-size: 160%;
-    padding: 0% 0% 0% 0%;
-    position: relative;
-    font-weight: bold;
-}
-
-
-.navbar::before{
-    content: "";
-    position: absolute;
-    z-index: -1;
-    border-radius: 20%;
-    display: flex;
-}
-
-.navbar ul li a:hover{
-    display: inline-block;
-    color: black;
-    background-color: white;
-    border-radius: 40%;
-    width: 110%;
-}
-.burger{
-    display: none;
-    cursor: pointer;
-}
-.burger div{
-    width: 25px;
-    height: 3px;
-    background-color: rgb(201, 207, 202);
-    margin: 5px;
-    cursor: pointer;
-}
-
-.floating{
-    display: grid;
-    background-color: rgb(210, 210, 210);
-    width: 79vw;
-    align-items: center;
-    text-align: center;
-    margin-top: 1vw;
-    margin-left: 10%;
-    margin-right: 10%;
-    padding: 20px 20px 20px 20px;
-    border: 3px solid rgb(8, 255, 234);
-    border-radius: 20px;
-}
-.floating a{
-    font-weight: bolder;
-    color:blueviolet;
-}
-
-.jobcontainer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-left: 2vw;
-    margin-right: 2vw;
-    width: auto;    
-}
-
-.jobs {
-    display: inline-grid;
-    width: 100%;
-    align-items: center;
-    border-radius: 15px;
-    border: 2px solid rgb(5, 241, 135);
-    color: rgb(52, 52, 49);
-    background-color: rgb(224, 224, 224);
-    margin:2vh 1vw 2vh 1vw;
-    padding:2vh 2vw 2vh 2vw;
-}
-.job li{
-    margin: 3px 0px 11px 0px;
-    padding:10px 0px 4px 0px;
-}
-
-.jobs h2 {
-    text-align: center;
-    margin-top: 15px;
-    margin-bottom: 10px;
-    /* margin-left: 6vw; */
-    background-color: #df3260;
-    border-radius: 25px;
-    width: 0100%;
-}
-
-
-.jobs script {
-    display: inline-grid;
-    text-align: center;
-    align-items: center;
-}
-/* Home Section */
-.description{
-    display: flex;
-    flex-direction: column;
-    padding: 13px 20px 36px 20px;
-    width: 100%;
-    justify-content: center;
-    align-items: center;
-    border-radius: 15px;
-    color: rgb(37, 36, 36);
-    background-color: rgb(149, 209, 216);
-}
-
-.description h1{
-    color:brown;
-    text-align: center;
-    margin: 10%, 10%, 10%, 10%;
-}
-#home p{
-    color: rgb(37, 37, 37);
-    text-align: center;
-    font-size: 1rem;
-}
-/* Utility Classes */
-.recentupdates{
-    text-align: center;
-    display: grid;
-    color: white;
-    background-color: #bb355b;
-    border-radius: 10px;
-    padding: 9px 0px 9px 0px;
-}
-.job{
-    text-align: left;
-    padding: 2% 5% 2% 2%;
-    margin: 1% 0% 1% 15%;
-}
-.job li a{
-    text-align: left;
-    padding: 2% 5% 2% 2%;
-    margin: 1% 0% 1% 15%;
-}
-.btn1{
-    /* display: flex; */
-    /* justify-content: space-around;
-    text-align: center; */
-    list-style: none;
-    width: 150px;
-    height: 100px;
-    /* font-size: large; */
-    background-color: #df3260;
-    height: auto;
-    border-radius: 4px;
-    box-shadow: inset 0 0 0 0 yellow;
-    transition: ease-out 0.3s;
-    font-size: 1rem;
-    outline:none;
-}
-.btn1:hover{
-    box-shadow: inset 300px 0 0 0 rgb(244, 193, 27);
-    cursor:pointer;
-    color:#0a0234;
-}
-
-.foot{
-    color: white;
-    display: flex;
-    height: 4vh;
-    background-color: #3c0715;
-    text-align: center;
-    justify-content: center;
-    bottom: 0;
-}
-.foot p{
-    justify-content: center;
-    text-align: center;
-    margin-top: 12px;
-}
-
-@media screen and (max-width:1024px){
-    body{
-        overflow-x: hidden;
-    }
-    .nav-links{
-        display: flex;
-        justify-content: space-around;
-        width: 60%;
-        list-style: none;
-    }
-    .btn1{
-        /* display: flex; */
-        justify-content: space-around;
-        text-align: center;
-        list-style: none;
-        width: 50%;
-        font-size: small;
-        background-color: #df3260;
-        /* color: #df3260; */
-        /* margin: 5%; */
-        height: auto;
-        border-radius: 20%;
-    }
-
-}
-
-@media screen and (max-width:768px){
-    body{
-        overflow-x: hidden;
-    }
-
-    .nav-links{
-        border-radius: 65px;
-        font-size: small;
-        position: absolute;
-        right: 0px;
-        height: 20vh;
-        top: 8vh;
-        background-color: rgb(34, 157, 161);
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        width: 40%;
-        transform: translate(100%);
-        transition: transform 0.5s ease-in;
-        overflow-x: hidden;
-    }
-    /* .nav-links li{
-        opacity: 0;
-    } */
-    .burger{
-        display:block;
-        cursor: pointer;
-    }
-    .jobcontainer{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-
-    }
-    .job li a{
-        text-align: left;
-        padding: 2% 1% 2% 2%;
-        margin: 1% 0% 1% 1%;
-    }
-    .btn1{
-        justify-content: space-around;
-        text-align: center;
-        list-style: none;
-        width: 30%;
-        font-size: small;
-        background-color: #df3260;
-        height: auto;
-        border-radius: 20%;
-    }
-
-}
-.nav-active{
-    transform: translateX(0%)
-}
-
-@keyframes navLinkFade{
-    from{
-        opacity: 0;
-        transform: translateX(30px);
-    }
-    to{
-        opacity: 1;
-        transform: translateX(0px)
-    }
-}
+            <marquee behavior="alternate" onmouseover="if(window.__cfRLUnblockHandflers) return false; this.stop();"
+            onmouseout="if (window.__cfRLUnblockHandflers) return false; this.start();">
+                <a href="http://164.100.130.240/" target="_blank">RationCard Online</a>
+                <a href="https://serviceonline.bihar.gov.in/" target="_blank">Jati/Niwas/Income Online
+                </a>
+            </marquee>
+        </div>
+    
+        <section class="jobcontainer">
+            <div class="jobs">
+                <h2>Jobs</h2>
+                <ol class="job">
+                    <li><a href="https://www.dashdash.in/jobs/bsf-group-b-apr22.html">BSF Group B SI Work, JE Electrical Online Form 2022</a></li>
+                    <hr>
+                    <li><a href="https://www.dashdash.in/jobs/DelhiDSSSB.html">DSSSB Various Post Online Form 2022</a></li>
+                    <hr>
+                    <li><a href="https://careers.ecil.co.in/login.php">IN PROGRESS....</a></li>
+                    <hr>
+                    <li><a href="">IN PROGRESS....</a></li>
+                    <hr>
+                    <li><a href="https://ibpsonline.ibps.in/rbiofeb22/">IN PROGRESS....</a></li>
+                    <hr>
+                    <li><a href="https://uppsc.up.nic.in/ConvePrefPages/CandidateInput_ConvPref.aspx?7HbnAEHFuw37kueqDGPENw==">IN PROGRESS....</a></li>
+                    <hr>
+                    <li><a href="https://rsmssb.rajasthan.gov.in/page?menuName=ApBuI6wdvnNKC6MoOgFsfXwFRsE7cKLr">IN PROGRESS....</a></li>
+                    <hr>
+                    <li><a href="https://blwactapprentice.in/Registration.php">IN PROGRESS....</a></li>
+                    <hr>
+                    <li><a href="https://smepaisa.bankofbaroda.co.in/BOBBRM/">IN PROGRESS....</a></li>
+                    <hr>
+                    <li><a href="https://cdn.digialm.com//EForms/configuredHtml/1258/76300//Instruction.html">IN PROGRESS....</a></li>
+                    <hr>
+                    <li><a href="https://onlinebpsc.bihar.gov.in/main/home">IN PROGRESS....</a></li>
+                </ol>
+                <li class="btn1"><a href="/jobs.html">View More</a></li>
+            </div>
+            <div class="jobs">
+                <h2>Admit Card</h2>
+                <ol class="job">
+                    <li><a href="http://uppbpb.gov.in/ASI_M_2020/List_of_SI(Confidential)_ASI(Ministerial).pdf">IN PROGRESS....</a></li>
+                    <hr>
+                    <li><a href="#">IN PROGRESS....</a></li>
+                    <hr>
+                    <li><a href="#">IN PROGRESS....</a></li>
+                    <hr>
+                    <li><a href="#">IN PROGRESS....</a></li>
+                    <hr>
+                    <li><a href="#">IN PROGRESS....</a></li>
+                    <hr>
+                    <li><a href="#">IN PROGRESS....</a></li>
+                    <hr>
+                    <li><a href="#">IN PROGRESS....</a></li>
+                    <hr>
+                    <li><a href="#">IN PROGRESS....</a></li>
+                    <hr>
+                    <li><a href="#">IN PROGRESS....</a></li>
+                    <hr>
+                    <li><a href="#">IN PROGRESS....</a></li>
+                </ol>
+                <li class="btn1"><a href="/admitcard.html">View More</a></li>
+            </div>
+            <div class="jobs">
+                <h2>Result</h2>
+                <ol class="job">
+                    <li><a href="https://www.dashdash.in/results/MPBSEX.XII.html">MPBSE MP Board Class 12th & 10th Exam Results 2022</a></li>
+                    <hr>
+                    <li><a href="#">IN PROGRESS....</a></li>
+                    <hr>
+                    <li><a href="#">IN PROGRESS....</a></li>
+                    <hr>
+                    <li><a href="#">IN PROGRESS....</a></li>
+                    <hr>
+                    <li><a href="#">IN PROGRESS....</a></li>
+                    <hr>
+                    <li><a href="#">IN PROGRESS....</a></li>
+                    <hr>
+                    <li><a href="#">IN PROGRESS.... </a></li>
+                    <hr>
+                    <li><a href="#">IN PROGRESS....</a></li>
+                    <hr>
+                    <li><a href="#">IN PROGRESS....</a></li>
+                    <hr>
+                    <li><a href="#">IN PROGRESS....</a></li>
+                </ol>
+                <li class="btn1"><a href="/result.html">View More</a></li>
+            </div>
+        </section>
+    
+    </section>
+    <footer class="foot">
+        <p>Copyright &copy; dashdash.in </p>
+    </footer>
+    
+</body>
+</html>
