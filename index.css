@@ -278,6 +278,7 @@ h2{
     .burger{
         display:block;
         cursor: pointer;
+        overflow-x: hidden;
     }
     .jobcontainer{
         display: flex;
