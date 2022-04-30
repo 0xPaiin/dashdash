@@ -225,7 +225,7 @@ h2{
 
 @media screen and (max-width:1024px){
     body{
-        overflow: hidden;
+        overflow-x: hidden;
     }
     .nav-links{
         display: flex;
@@ -288,15 +288,12 @@ h2{
         margin: 1% 0% 1% 1%;
     }
     .btn1{
-        /* display: flex; */
         justify-content: space-around;
         text-align: center;
         list-style: none;
         width: 30%;
         font-size: small;
         background-color: #df3260;
-        /* color: #df3260; */
-        /* margin: 5%; */
         height: auto;
         border-radius: 20%;
     }
