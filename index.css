@@ -11,6 +11,7 @@ body{
     justify-content:"";
     display: block;
     background-color: rgb(34, 157, 185);
+    overflow-x: hidden;
 }
 
 a{
@@ -39,7 +40,7 @@ h2{
     align-items: center;
     min-height: 8vh;
     border-radius: 18px;
-    overflow: hidden;
+    overflow-x: hidden;
 }
 
 .nav-links{
@@ -47,6 +48,7 @@ h2{
     justify-content: space-around;
     width: 40%;
     list-style: none;
+    overflow-x: hidden;
 }
 
 .nav-links li a{
@@ -232,6 +234,7 @@ h2{
         justify-content: space-around;
         width: 60%;
         list-style: none;
+        overflow-x: hidden;
     }
     .btn1{
         /* display: flex; */
@@ -253,7 +256,6 @@ h2{
     body{
         overflow-x: hidden;
     }
-
     .nav-links{
         border-radius: 65px;
         font-size: small;
