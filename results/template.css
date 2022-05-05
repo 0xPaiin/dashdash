@@ -67,6 +67,7 @@ h2{
 .nav-links li{
     list-style: none;
 }
+
 .navbar::before{
     content: "";
     position: absolute;
@@ -81,6 +82,7 @@ h2{
     background-color: white;
     border-radius: 40%;
     width: 110%;
+    height: 8vh;
 }
 .burger{
     display: none;
@@ -92,6 +94,9 @@ h2{
     background-color: rgb(201, 207, 202);
     margin: 5px;
     cursor: pointer;
+}
+.nav-links.nav-active li{
+    opacity: 1;
 }
 
 .floating{
@@ -111,6 +116,11 @@ h2{
     font-weight: bolder;
     color:blueviolet;
 }
+
+.nav-links.nav-active{
+    opacity: 1;
+}
+
 .nav-links.nav-active li{
     opacity: 1;
 }
@@ -248,6 +258,7 @@ td{
 
 @media screen and (max-width:1024px){
     body{
+        width: 100%;
         overflow-x: hidden;
     }
     .nav-links{
@@ -270,7 +281,8 @@ td{
 
 @media screen and (max-width:768px){
     body{
-        overflow-x: hidden;
+        margin: auto;
+        width: 100%;
     }
     .nav-links{
         border-radius: 65px;
@@ -283,13 +295,17 @@ td{
         display: flex;
         flex-direction: column;
         align-items: center;
-        width: 40%;
-        transform: translateX(100%);
+        width: 60%;
+        transform: translateY(100%);
         transition: transform 0.5s ease-in;
+    }
+    .nav-links{
+        opacity: 0;
     }
     .nav-links li{
         opacity: 0;
     }
+    
     .burger{
         display:block;
         cursor: pointer;
@@ -318,9 +334,8 @@ td{
 
 }
 .nav-active{
-    transform: translateX(0%) !important;
+    transform: translateY(0%) !important;
 }
 table tr td{
-    font-size: small;
-    padding-left: 3%;
+    padding: 4%;
 }
