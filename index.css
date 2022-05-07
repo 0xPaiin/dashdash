@@ -6,8 +6,7 @@
 
 body{
     width: 100%;
-    align-items: center;
-    justify-content:"";
+    justify-content:"center";
     display: block;
     background-color: rgb(34, 157, 185);
     overflow-x: hidden;
@@ -15,17 +14,10 @@ body{
 
 a{
     text-decoration: none;
-    padding: 15px 30px;
+    /* padding: 5rem; */
     color: #0a0234;
-    position: relative;
 }
-h2{
-    font-weight: bold;
-}
-.vacencies{
-    color: #36a8a3;
-    letter-spacing: 1px;
-}
+
 .logo{
     color: rgb(241, 234, 234);
     text-transform: uppercase;
@@ -37,30 +29,30 @@ h2{
     background-color: rgb(34, 157, 161);
     justify-content: space-around;
     align-items: center;
-    min-height: 8vh;
+    height: 60px;
     border-radius: 18px;
-    overflow-x: hidden;
+    overflow: hidden;
 }
 
 .nav-links{
     display: flex;
     justify-content: space-around;
-    width: 40%;
+    width: 60%;
     list-style: none;
     overflow-x: hidden;
-}
-
-.nav-links li a{
-    text-decoration: none;
-    color: rgb(243, 228, 195);
-    font-size: 160%;
-    font-weight: bold;
 }
 
 .nav-links li{
     list-style: none;
 }
 
+.nav-links li a{
+    text-decoration: none;
+    color: rgb(243, 228, 195);
+    font-size: 20px;
+    font-weight: bold;
+    align-items: center;
+}
 
 .navbar::before{
     content: "";
@@ -73,10 +65,10 @@ h2{
 .navbar ul li a:hover{
     display: inline-block;
     color: black;
-    background-color: white;
-    border-radius: 40%;
-    width: 110%;
-    height: 8vh;
+    align-items: center;
+    background-color: rgb(255, 191, 92);
+    border-radius: 20px;
+    height: auto;
 }
 .burger{
     display: none;
@@ -150,14 +142,8 @@ h2{
     width: 0100%;
 }
 
-
-.jobs script {
-    display: inline-grid;
-    text-align: center;
-    align-items: center;
-}
 /* Home Section */
-.description{
+.shortinfo{
     display: flex;
     flex-direction: column;
     padding: 13px 20px 36px 20px;
@@ -169,17 +155,12 @@ h2{
     background-color: rgb(149, 209, 216);
 }
 
-.description h1{
+.shortinfo h1{
     color:brown;
     text-align: center;
     margin: 10%, 10%, 10%, 10%;
 }
-#home p{
-    color: rgb(37, 37, 37);
-    text-align: center;
-    font-size: 1rem;
-}
-/* Utility Classes */
+
 .recentupdates{
     text-align: center;
     display: grid;
@@ -199,12 +180,12 @@ h2{
     margin: 1% 0% 1% 15%;
 }
 .btn1{
-    /* display: flex; */
-    /* justify-content: space-around;
-    text-align: center; */
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
     list-style: none;
-    width: 150px;
-    height: 100px;
+    width: 100px;
+    /* height: 50px; */
     /* font-size: large; */
     background-color: #df3260;
     height: auto;
@@ -215,7 +196,7 @@ h2{
     outline:none;
 }
 .btn1:hover{
-    box-shadow: inset 300px 0 0 0 rgb(244, 193, 27);
+    box-shadow: inset 200px 0 0 0 rgb(244, 193, 27);
     cursor:pointer;
     color:#0a0234;
 }
@@ -225,71 +206,73 @@ h2{
     display: flex;
     height: 4vh;
     background-color: #3c0715;
-    text-align: center;
     justify-content: center;
+    align-items: center;
     bottom: 0;
-}
-.foot p{
-    justify-content: center;
-    text-align: center;
-    margin-top: 12px;
+    vertical-align: bottom;
 }
 
 @media screen and (max-width:1024px){
     body{
         overflow-x: hidden;
     }
+    .logo{
+        color: rgb(241, 234, 234);
+        text-transform: uppercase;
+        letter-spacing: 5px;
+        font-size: 22px;
+    }
     .nav-links{
         display: flex;
         justify-content: space-around;
+        align-items: center;
         width: 60%;
         list-style: none;
-        overflow-x: hidden;
     }
     .btn1{
-        /* display: flex; */
         justify-content: space-around;
         text-align: center;
         list-style: none;
         width: 50%;
         font-size: small;
         background-color: #df3260;
-        /* color: #df3260; */
-        /* margin: 5%; */
         height: auto;
         border-radius: 20%;
     }
 
-}
 
 @media screen and (max-width:768px){
     body{
-        margin:auto;
+        margin: auto;
         width: 100%;
     }
-
+    a{
+        text-decoration: none;
+        padding: 4px;
+        color: #0a0234;
+    }
     .nav-links{
         border-radius: 65px;
         font-size: small;
         position: absolute;
         right: 0px;
-        height: 20vh;
-        top: 8vh;
+        height: 30vh;
+        top: 5vh;
         background-color: rgb(34, 157, 161);
         display: flex;
         flex-direction: column;
         align-items: center;
-        width: 40%;
+        width: 50%;
         transform: translateY(100%);
-        transition: transform 0.4s ease-in;
+        transition: transform 0.5s ease-in;
     }
-    
     .nav-links{
         opacity: 0;
     }
     .nav-links li{
         opacity: 0;
     }
+    
     .burger{
         display:block;
         cursor: pointer;
@@ -309,14 +292,28 @@ h2{
         justify-content: space-around;
         text-align: center;
         list-style: none;
-        width: 40%;
+        width: 30%;
         font-size: small;
         background-color: #df3260;
         height: auto;
         border-radius: 20%;
     }
+    table{
+        border-collapse: collapse;
+        padding: 2% 2% 2% 2%;
+    }
+    tr{
+        border-collapse: collapse;
+        padding: 2% 2% 2% 2%;
+    }
+    td{
+        font-size: small;
+        border-collapse: collapse;
+        border: 2px solid brown;
+        padding: 4% 4% 2% 4%;
+    }
+    .nav-active{
+        transform: translateY(0%) !important;
+    }
 
-}
-.nav-active{
-    transform: translateY(0%) !important;
 }
