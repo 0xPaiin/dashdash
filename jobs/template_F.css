@@ -30,7 +30,7 @@ a{
     align-items: center;
     height: 60px;
     border-radius: 18px;
-    overflow-x: hidden;
+    overflow: hidden;
 }
 
 .nav-links{
@@ -72,8 +72,8 @@ a{
     display: inline-block;
     color: black;
     align-items: center;
-    background-color: rgb(255, 92, 174);
-    border-radius: 150px;
+    background-color: rgb(255, 191, 92);
+    border-radius: 20px;
     height: auto;
 }
 .burger{
@@ -223,9 +223,16 @@ td{
         width: 100%;
         overflow-x: hidden;
     }
+    .logo{
+        color: rgb(241, 234, 234);
+        text-transform: uppercase;
+        letter-spacing: 5px;
+        font-size: 22px;
+    }
     .nav-links{
         display: flex;
         justify-content: space-around;
+        align-items: center;
         width: 60%;
         list-style: none;
     }
