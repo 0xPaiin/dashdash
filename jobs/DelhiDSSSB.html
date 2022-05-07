@@ -1,329 +1,319 @@
-<!DOCTYPE .html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DashDash.in : Sarkari Results, Latest Online Form | result 2022</title>
-    <meta name="description" content="Sarkari Result, Sarkari Results : Dashdash.in provides latest Sarkari result, Jobs, Online Form, Sarkari Naukri Result in Sarkari Result 2022 various sectors such as Railway, Bank, SSC, Navy, Police, UPSC, UPPSC, UPSSSC, UPTET, UP Scholarship and other sarkari result alerts on one place">
-    <meta name="keywords" content="Sarkari Result, Sarkari Results, Latest Sarkari Result, Sarkariresult, Sarkari, SarkariResults, Sarkari Naukri, sarkari results 2022, sarkari result 2021, Sarkari Exam, Dashdash.in ">
-    <meta http-equiv="content-language" content="en" />
-    <meta name="distribution" content="global" />
-    <script>
-        const navSlide = () => {
-            const burger = document.querySelector('.burger');
-            const nav = document.querySelector('.nav-links');
-            const navLinks = document.querySelectorAll('.nav-links li');
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
 
-            burger.addEventListener('click',('.nav-links')=>{
-                nav.classList.toggle('nav-active');
-            });
+}
+body{
+    width: 100%;
+    justify-content:"center";
+    display: block;
+    background-color: rgb(34, 157, 185);
+    overflow-x: hidden;
+}
 
-        }
-        navSlide();
-    </script>
+a{
+    text-decoration: none;
+    padding: 5rem;
+    color: #0a0234;
+}
+.logo{
+    color: rgb(241, 234, 234);
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 22px;
+}
+.navbar{
+    display: flex;
+    background-color: rgb(34, 157, 161);
+    justify-content: space-around;
+    align-items: center;
+    height: 60px;
+    border-radius: 18px;
+    overflow-x: hidden;
+}
+
+.nav-links{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 60%;
+    list-style: none;
+}
+
+.nav-links li a{
+    text-decoration: none;
+    color: rgb(243, 228, 195);
+    font-size: 20px;
+    font-weight: bold;
+    align-items: center;
+}
+
+.navbar::before{
+    content: "";
+    position: absolute;
+    z-index: -1;
+    border-radius: 20%;
+    display: flex;
+}
+.nav-links li{
+    list-style: none;
+}
+
+.navbar::before{
+    content: "";
+    position: absolute;
+    z-index: -1;
+    border-radius: 150px;
+    display: flex;
+}
+
+.navbar ul li a:hover{
+    display: inline-block;
+    color: black;
+    align-items: center;
+    background-color: rgb(255, 92, 174);
+    border-radius: 150px;
+    height: auto;
+}
+.burger{
+    display: none;
+    cursor: pointer;
+}
+.burger div{
+    width: 25px;
+    height: 3px;
+    background-color: rgb(252, 251, 255);
+    margin: 5px;
+    cursor: pointer;
+}
+.nav-links.nav-active li{
+    opacity: 1;
+}
+
+.floating{
+    display: grid;
+    background-color: rgb(210, 210, 210);
+    width: 79vw;
+    align-items: center;
+    text-align: center;
+    margin-top: 1vw;
+    margin-left: 10%;
+    margin-right: 10%;
+    padding: 20px 20px 20px 20px;
+    border: 3px solid rgb(8, 255, 234);
+    border-radius: 20px;
+}
+.floating a{
+    font-weight: bolder;
+    color:blueviolet;
+}
+
+.nav-links.nav-active{
+    opacity: 1;
+}
+
+.nav-links.nav-active li{
+    opacity: 1;
+}
+
+.container {
+    display: inline-block;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+    margin-top: 2%;
+    border: 2px solid rgb(5, 241, 135);
+    color: rgb(52, 52, 49);
+    background-color: rgb(209, 211, 214);
+    padding:2vh 2vw 2vh 2vw;
+}
+
+/* Home Section */
+.shortinfo{
+    flex-direction: column;
+    padding: 10px 20px 10px 20px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    color: rgb(37, 36, 36);
+    background-color: rgb(149, 209, 216);
+    border: none;
+    display: flex;
+    vertical-align: top;
+    font-size: larger;
+    text-align: center;
+}
+
+.shortinfo h1{
+    color: brown;
+}
+table{
+    border-collapse: collapse;
+    padding: 2% 2% 2% 2%;
+}
+tr{
+    border-collapse: collapse;
+    padding: 2% 2% 2% 2%;
+}
+td{
+    font-size: x-large;
+    border-collapse: collapse;
+    border: 2px solid brown;
+    padding: 2% 2% 2% 2%;
+}
+.table1info{
+    width: 100%;
+    text-align: center;
+    font-size: large;
+    border: 3px solid rgb(164, 8, 88);
+    padding: 10px;
+}
+/* Utility Classes */
+.recentupdates{
+    text-align: center;
+    display: grid;
+    color: white;
+    background-color: #bb355b;
+    border-radius: 10px;
+    padding: 9px 0px 9px 0px;
+}
+
+.btn1{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    list-style: none;
+    width: 150px;
+    height: 100px;
+    /* font-size: large; */
+    background-color: #df3260;
+    height: auto;
+    border-radius: 4px;
+    box-shadow: inset 0 0 0 0 yellow;
+    transition: ease-out 0.3s;
+    font-size: 1rem;
+    outline:none;
+}
+.btn1:hover{
+    box-shadow: inset 300px 0 0 0 rgb(244, 193, 27);
+    cursor:pointer;
+    color:#0a0234;
+}
+
+.foot{
+    color: white;
+    display: flex;
+    height: 4vh;
+    background-color: #3c0715;
+    text-align: center;
+    justify-content: center;
+    bottom: 0;
+}
+.foot p{
+    justify-content: center;
+    text-align: center;
+    margin-top: 12px;
+}
+
+@media screen and (max-width:1024px){
+    body{
+        width: 100%;
+        overflow-x: hidden;
+    }
+    .nav-links{
+        display: flex;
+        justify-content: space-around;
+        width: 60%;
+        list-style: none;
+    }
+    .btn1{
+        justify-content: space-around;
+        text-align: center;
+        list-style: none;
+        width: 50%;
+        font-size: small;
+        background-color: #df3260;
+        height: auto;
+        border-radius: 20%;
+    }
+
+
+@media screen and (max-width:768px){
+    body{
+        margin: auto;
+        width: 100%;
+    }
+    a{
+        text-decoration: none;
+        padding: 4px;
+        color: #0a0234;
+    }
+    .nav-links{
+        border-radius: 65px;
+        font-size: small;
+        position: absolute;
+        right: 0px;
+        height: 30vh;
+        top: 5vh;
+        background-color: rgb(34, 157, 161);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 50%;
+        transform: translateY(100%);
+        transition: transform 0.5s ease-in;
+    }
+    .nav-links{
+        opacity: 0;
+    }
+    .nav-links li{
+        opacity: 0;
+    }
     
-    <style>
+    .burger{
+        display:block;
+        cursor: pointer;
+    }
+    .jobcontainer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
 
-    </style>
-    <link rel="stylesheet" href="template_F.css"/>
+    }
+    .job li a{
+        text-align: left;
+        padding: 2% 1% 2% 2%;
+        margin: 1% 0% 1% 1%;
+    }
+    .btn1{
+        justify-content: space-around;
+        text-align: center;
+        list-style: none;
+        width: 30%;
+        font-size: small;
+        background-color: #df3260;
+        height: auto;
+        border-radius: 20%;
+    }
 
-</head>
-<body>
-    <nav class="navbar">
-        <div class="logo">
-            <h4>dashdash.in</h4>
-        </div>
-        <ul class="nav-links">
-            <li><a href="https://www.dashdash.in/">Home</a></li>
-            <li><a href="https://www.dashdash.in/">Result</a></li>
-            <li><a href="https://www.dashdash.in/">AdmitCard</a></li>
-            <li><a href="https://www.dashdash.in/">LatestJobs</a></li>
-            <li><a href="https://www.dashdash.in/">AboutUs</a></li>
-        </ul>
-        <div class="burger">
-            <div class="line1"></div>
-            <div class="line2"></div>
-            <div class="line3"></div>
-        </div>
-    </nav>
-    <script src="template.js"></script>
-    <section class="shortinfo">
-        <h1>Welcome To DashDash Official</h1>
-        <p> 
-            Dashdash.in is a portal where tons of Sarkari Jobs, online-forms are available, as soon as a new Vacency comes out in Bihar, Uttar Pradesh, Madhya Pradesh, Delhi, Uttarakhand and other states of India. The information will be available on dashdash.in . Sarkari Naukri, 10+2 Form, Sarkari Naukri Graduate Passed Jobs, Sarkari Naukri Post Graduate Jobs, Sarkari Naukri Medical Jobs, Sarkari Naukri in SSC, UPSC. Disired Candidates can see all the information about Naukri-form organized by organizations on a single click.
-        </p>
-        <!-- <button class="btn">Order Now</button> --> 
-    
-    </section>
-    <br>
-
-    <section>
-        <h1 class="recentupdates">Recent Updates</h1>
-        <div class="floating">
-            <marquee behavior="alternate" onmouseover="if (window.__cfRLUnblockHandflers) return false; this.stop();"onmouseout="if(window.__cfRLUnblockHandflers) return false; this.start();">
-                <a href="https://www.youtube.com/channel/UC7QLSWCa1pfG2iPCr_GxqqQ"target="_blank">DashDash Official Youtube Channel
-                </a>
-                <a href="http://www.results.biharboardonline.com/" target="_blank">BiharBoard Matric result</a>
-                <a href="https://voterportal.eci.gov.in/" target="_blank">Voter Card</a>
-            </marquee>
-
-            <marquee behavior="alternate" onmouseover="if(window.__cfRLUnblockHandflers) return false; this.stop();"
-            onmouseout="if (window.__cfRLUnblockHandflers) return false; this.start();">
-                <a href="http://164.100.130.240/" target="_blank">RationCard Online</a>
-                <a href="https://serviceonline.bihar.gov.in/" target="_blank">Jati/Niwas/Income Online
-                </a>
-            </marquee>
-        </div>
-    <div class="container">
-        <div style="padding: 20px;">
-            <h1 align="center">Delhi DSSSB Various Post 06/2022 Recruitment 2022 Online Form</h1>
-            <h3 align="center">Post Date / Update: 	20 April 2022 | 10:54 AM</h3>
-        </div>
-
-        <div>
-            <ul style="display: flex; list-style: none;">
-                <li style="width: 20%; font-weight: bolder; margin: 1% 1% 1% 1%;">Short Information: </li>
-                <ul>
-                    <li style="text-align: left; margin: 1% 1% 1% 10%; font-size: larger; padding-left: 2%;"><a title="DSSSB" href="https://dsssb.delhi.gov.in/home/Delhi-Subordinate-Services-Selection-Board" target="_blank"><span style="color: #ff0059;">Delhi Subordinate Service Selection Board (DSSSB)</a></span>
-                        Has released the notification of Manager, Field Supervisor & Other Various Post Advt No 06/2022. Any candidate who is interested in the recruitment of Delhi and fulfills the eligibility can apply online from 20 April 2022 to 09 May 2022. Read the advertisement for eligibility, age limit, selection procedure, syllabus, pay scale and other information in recruitment.
-                    </li>
-                </ul>
-            </ul>
-        </div>
-        <div class="table1info">
-            <div style="color: #d21e5d;">Delhi Subordinate Service Selection Board(DSSSB)</div>
-            <div style="color: green;">DSSSB Various Post Recruitment 2022 Online Form</div>
-            <div style="color: purple;">DSSSB Advt No. : 06/2022 Short Details of Notification</div>
-            <div style="background-color: hotpink;"><a href="https://www.dashdash.in/">www.dashdash.in</a></div>
-        </div>
-        <div class="table1info">
-            <div>
-                <ul style="color: #d21e5d; font-weight: bolder;">Important Dates</ul>
-                <ul style="text-align: left; padding: 15px;">
-                    <li>Application Begin : 20/04/2022</li>
-                    <li>Last Date for Apply Online : 09/05/2022</li>
-                    <li>Pay Exam Fee Last Date: 09/05/2022</li>
-                    <li>Exam Date : Notified Soon </li>
-                    <li>Admit Card Available : Notified Soon</li>
-                </ul>
-            </div>
-            <div style="border-top: 5px solid rgb(164, 8, 88);">
-                <ul style="color: #f32d72; font-weight: bolder;">Application Fee</ul>
-                <ul style="text-align: left; padding: 15px;">
-                    <li>General / OBC / EWS : 100/-</li>
-                    <li>SC / ST / PH : 0/-</li>
-                    <li>All Category Female : 0/-</li>
-                    <li>Pay the Examination Fee Through Debit Card, Credit Card, Net Banking Fee Mode Only.</li>
-                </ul>
-            </div>   
-        </div>
-        <table>
-            <tr>
-                <td colspan="4">
-                    <h2 align="center">
-                        <span style="color: rgb(204, 4, 164);"><b>DSSSB Various Post 2022 </b>
-                            <span style="color: rgb(19, 155, 162);"><b>Age Limit as on 09/05/2022</b></span>
-                        </span>
-                    </h2>
-                    <ul>
-                        <li>Minimum Age : <b>18 Years.</b></li>
-                        <li>Maximum Age : <b>27-35 Years. Post Wise</b></li>
-                        <li>Age Relaxation Extra as per DSSSB Various Post 06/2022 Recruitment Rules.</li>
-                    </ul>
-                </td>
-            </tr>
-            <tr>
-                <td colspan="4"  valign="top">
-                    <h2 align="center">
-                        <span style="color: rgb(204, 4, 164);"><b>DSSSB Various Post 2022 </b>
-                            <span style="color: rgb(19, 155, 162);"><b>Vacancy Details : 168 Post</b></span>
-                        </span>
-                    </h2>
-                </td>
-            </tr>
-            <tr>
-                <td style="font-size: large; font-weight: bold; text-align: center; padding: 1% 1% 1% 1%;">Post Name</td>
-                <td style="font-size: large; font-weight: bold; text-align: center; padding: 1% 1% 1% 1%; width: 10%;">Post Code</td>
-                <td style="font-size: large; width: 10%; font-weight: bold; text-align: center; padding: 1% 1% 1% 1%;">Total Post</td>
-                <td style="font-size: large; font-weight: bold; text-align: center; padding: 1% 1% 1% 1%;">DSSSB Various Post Wise Eligibility</td>
-            </tr>
-            <tr>
-                <td>Assistant Archivist, Grade-I</td>
-                <td>01/22</td>
-                <td>06</td>
-                <td>
-                    <ul>
-                        <li>Diploma in Archives Keeping from the National Archives of India.</li>
-                        <li>Age Limit : 18-30 Years.</li>
-                    </ul>
-                </td>
-            </tr>
-            <tr>
-                <td>Manager (Civil)</td>
-                <td>02/22</td>
-                <td>01</td>
-                <td>
-                    <ul>
-                        <li>BE / B.Tech Degree in Civil Engineering in Any Recognized Institute in India.</li>
-                        <li>Age Limit : 18-35 Years.</li>
-                    </ul>
-                </td>
-            </tr>
-            <tr>
-                <td>Shift Incharge</td>
-                <td >03/22</td>
-                <td >08</td>
-                <td>
-                    <ul>
-                        <li>Class 10 Matric Exam Passed with ITI Certificate in Electrical Trade with 3 Year Experience</li>
-                        <li>Age Limit : 18-32 Years.</li>
-                    </ul>
-                </td>
-            </tr>
-            <tr>
-                <td>Manager (Mechanical)</td>
-                <td>04/22</td>
-                <td>24</td>
-                <td>
-                    <ul>
-                        <li>BE / B.Tech Degree in Mechanical / Automobile Engineering in Any Recognized Institute in India.</li>
-                        <li>Age Limit : 18-35 Years.</li>
-                    </ul>
-                </td>
-            </tr>
-            <tr>
-                <td>Manager (Traffic)</td>
-                <td>05/22</td>
-                <td>13</td>
-                <td>
-                    <ul>
-                        <li>Master Degree Any Subject in Any Recognized University in India.</li>
-                        <li>Age Limit : 18-35 Years.</li>
-                    </ul>
-                </td>
-            </tr>
-            <tr>
-                <td>Protection Officer</td>
-                <td>06/22</td>
-                <td>23</td>
-                <td>
-                    <ul>
-                        <li>Master Degree in Social Work / Sociology with 3 Year Experience.</li>
-                        <li>Age Limit : 18-30 Years.</li>
-                    </ul>
-                </td>
-            </tr>
-            <tr>
-                <td>Deputy Manager (Traffic)</td>
-                <td>07/22</td>
-                <td>03</td>
-                <td>
-                    <ul>
-                        <li>Bachelor Degree in Any Stream at Any Recognized University in India.</li>
-                        <li>Age Limit : 18-35 Years.</li>
-                    </ul>
-                </td>
-            </tr>
-            <tr>
-                <td>Pump Driver/ Fitter Electrical 2nd Class/ Electric Driver 2nd Class/ Motorman/Electric Mistry /SBO</td>
-                <td>08/22</td>
-                <td>68</td>
-                <td>
-                    <ul>
-                        <li>Class 10 Matric Exam Passed with ITI Certificate in Electrical Trade.</li>
-                        <li>Age Limit : 18-27 Years.</li>
-                    </ul>
-                </td>
-            </tr>
-            <tr>
-                <td>Manager (IT)</td>
-                <td>09/22</td>
-                <td>01</td>
-                <td>
-                    <ul>
-                        <li>Master Degree in Computer Application OR BE B.Tech Degree in Computer Engineering / IT Trade.</li>
-                        <li>Age Limit : 18-35 Years.</li>
-                    </ul>
-                </td>
-            </tr>
-            <tr>
-                <td>Filter Supervisor</td>
-                <td>10/22</td>
-                <td>18</td>
-                <td>
-                    <ul>
-                        <li>Bachelor Degree in Science B.Sc Degree in Any Recognized University in India with 2 Year Experience.</li>
-                        <li><b>Age Limit : </b>18-27 Years.</li>
-                    </ul>
-                </td>
-            </tr>
-            <tr>
-                <td>Manager (Electrical)</td>
-                <td>11/22</td>
-                <td>01</td>
-                <td>
-                    <ul>
-                        <li>BE / B.Tech Degree in Electrical Engineering in Any Recognized Institute in India.</li>
-                        <li>Age Limit : 18-35 Years.</li>
-                    </ul>
-                </td>
-            </tr>
-            <tr>
-                <td colspan="4">
-                    <div>
-                        <b style="color: #dd0953; font-size: x-large;">How to Fill DSSSB Various Post 06/2022 Online Form 2022</b>
-                        <ul style="text-align: left;">
-                            <li>Delhi Subordinate Service Selection Board (DSSSB) Online Released Manager, Dy. Manager, Field Supervisor & Other Various Post Advt No 06/2022 Notification. Candidate Can Apply Between 20/04/2022 to 09/05/2022.</li>
-                            <li>Candidate Read the Notification Before Apply the Recruitment Application Form in DSSSB Various Post Exam Online Form 2022.</li>
-                            <li>
-                                Kindly Check and Collect the All Document - Eligibility, ID Proof, Address Details, Basic Details.
-                            </li>
-                            <li>
-                                Kindly Ready Scan Document Related to Admission Entrance Form - Photo, Sign, ID Proof, Etc.
-                            </li>
-                            <li>
-                                Before Submit the Application Form Must Check the Preview and All Column Carefully.
-                            </li>
-                            <li>
-                                Take A Print Out of Final Submitted Form.
-                            </li>
-                        </ul>
-                    </div>
-                </td>
-            </tr>
-            <tr>
-                <td colspan="4" style="text-align: center; font-size: large; color: rgb(198, 15, 15);"><b>Interested Candidate Can Read the Full DSSSB 06/2022 Notification Before Apply Online.</b></td>
-            </tr>
-            <tr>
-                <td colspan="4" style="text-align: center; font-size: x-large; color: rgb(87, 0, 200);"><b>Important Links</b></td>
-            </tr>
-            <tr>
-                <td colspan="2" style="text-align: center; font-size: large; color: rgb(181, 10, 172);"><b>Apply Online</b></td>
-                <td colspan="2" style="text-align: center; font-size: large;"><a href="https://dsssbonline.nic.in/" target="__blank"><b>Login</b></a></td>
-            </tr>
-            <tr>
-                <td colspan="" style="text-align: center; font-size: medium; color: rgb(181, 10, 172);"><b>Apply Online</b></td>
-                <td colspan="3" style="text-align: center; font-size: large;"><a href="https://dsssbonline.nic.in/" target="__blank"><b>Registration</b></a></td>
-            </tr>
-            <tr>
-                <td colspan="2" style="text-align: center; font-size: large; color: rgb(181, 10, 172);"><b>Download Notification</b></td>
-                <td colspan="2" style="text-align: center; font-size: large;"><a href="https://www.sarkariresults.org.in/wp-content/uploads/2022/04/06-2022-Advt._0.pdf" target="__blank"><b>ClickHere</b></a>
-            </tr>
-            <tr>
-                <td colspan="2" style="text-align: center; font-size: large; color: rgb(181, 10, 172);"><b>Download Syllabus</b></td>
-                <td colspan="2" style="text-align: center; font-size: large;"><a href="https://www.sarkariresults.org.in/wp-content/uploads/2022/04/dsssb0622-syllabus.jpg" target="__blank"><b>ClickHere</b></a>
-            </tr>
-            <tr>
-                <td colspan="2" style="text-align: center; font-size: large; color: rgb(181, 10, 172);"><b>DSSSB Official Website</b></td>
-                <td colspan="2" style="text-align: center; font-size: large;"><a href="https://dsssb.delhi.gov.in/home/Delhi-Subordinate-Services-Selection-Board" target="__blank"><b>ClickHere</b></a>
-            </tr>
-        </table>
-    </div>
-    </section>
-    <footer class="foot">
-        <p>Copyright &copy; dashdash.in </p>
-    </footer>
-    
-</body>
-</html>
+}
+.nav-active{
+    transform: translateY(0%) !important;
+}
+table{
+    border-collapse: collapse;
+    padding: 2% 2% 2% 2%;
+}
+tr{
+    border-collapse: collapse;
+    padding: 2% 2% 2% 2%;
+}
+td{
+    font-size: small;
+    border-collapse: collapse;
+    border: 2px solid brown;
+    padding: 4% 4% 2% 4%;
+}
